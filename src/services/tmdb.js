@@ -2,7 +2,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'https://api.themoviedb.org/3',
+  baseURL: import.meta.env.VITE_API_URL,
   headers: {
     Authorization: `Bearer ${import.meta.env.VITE_TMDB_BEARER}`,
     accept: 'application/json',
