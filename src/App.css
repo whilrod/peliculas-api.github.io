@@ -64,3 +64,34 @@ button:disabled {
     grid-template-columns: repeat(5, 1fr); /* Pantallas grandes */
   }
 }
+
+/* Modo oscuro detectado automáticamente */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212;
+    color: white;
+  }
+
+  h1, h2{
+    color: #f2f2f2;
+  }
+
+  h3 {
+    color: #121212;
+  }
+
+  .card {
+    background-color: #121212;
+    color: white;
+  }
+
+  p {
+    color: #121212;
+  }
+
+  button {
+    background-color: #363836;
+    color: white;
+  }
+  }
+
